@@ -16,8 +16,14 @@
 <body>
   <h1>Partner Onboarding Bot Testing</h1>
   <p class="note">Internal test page for the Zoho Finance Consulting Partner Program assistant.</p>
-  <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
-  <script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq8e7778c0ae3eac6bc3214631630366318e77eb2566f06b67883380c20d4d0087" defer></script>
+  <script>
+  window.$zoho = window.$zoho || {};
+  $zoho.salesiq = $zoho.salesiq || {};
+  $zoho.salesiq.ready = function () {
+    $zoho.salesiq.floatwindow.visible("show");
+  };
+</script>
+<script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq8e7778c0ae3eac6bc3214631630366318e77eb2566f06b67883380c20d4d0087" defer></script>
 </body>
 
 </html>
